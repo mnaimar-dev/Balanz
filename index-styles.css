@@ -1,0 +1,388 @@
+/*** Colors Start  ***/
+:root {
+    --grey2: #eeeeee;
+    --grey3: #dddddd;
+    --grey4: #aeadb3;
+    --mainGrey: #333333;
+    --secondGrey: #eff4f8;
+    --mainBlue: #002162;
+    --secondBlue: #014693;
+}
+/*** Colors End ***/
+
+/*** Global Start ***/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: Roboto, sans-serif;
+    width: 100%;
+    margin-left: -0.1rem;
+}
+/*** Global End ***/
+
+.hero {
+    position: fixed;
+    width: 100%;
+    background-color: var(--secondGrey);
+    opacity: 1;
+    z-index: 5px;
+}
+
+/*** Header Start ***/
+.header {
+    margin-top: -0.9rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 8rem 1.2rem 11.3rem;
+    background-color: white;
+    height: 100%;
+}
+
+.logo__img {
+    width: 18rem;
+    padding-top: 0.8rem;
+}
+
+.head {
+    display: block;
+    padding-top: 1.2rem;
+}
+
+.login {
+    text-decoration: none;
+    color: var(--grey4);
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.person-icon {
+    margin-right: 3rem;
+}
+
+.open-account {
+    padding: 1rem;
+    border: 1px solid var(--mainBlue);
+    border-radius: 1.2rem;
+    text-decoration: none;
+    color: var(--mainBlue);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/*** Header End ***/
+
+
+/*** Nav Start ***/
+.nav-container {
+    background-color: var(--mainGrey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8.5rem 1rem 11.4rem;
+    position: fixed;
+    width: 100%;
+}
+
+
+.links {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--grey4);
+    font-weight: normal;
+    margin-right: 1.9rem;
+    margin-top: 50rem;
+}
+
+.links:hover {
+    color: var(--grey2);
+}
+
+.icons {
+    margin-right: 1.6rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+.flag {
+    cursor: pointer;
+}
+/*** Nav End ***/
+
+/*** Banner Start ***/
+
+.main-banner {
+    width: 100%;
+    display: flex;
+    padding-top: 6rem;
+}
+
+/* .main-banner a{
+    width: 400%;
+    animation: change 20s infinite;
+} */
+
+.main-banner img {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding-top: 3rem;
+}
+
+.banner-img, .banner-img2, .banner-img3  {
+    width: 100%;
+}
+
+/* @keyframes changes {
+    0% { margin-left: 0; }
+    10% { margin-left: 0; }
+    
+    20% { margin-left: -100; }
+    30% { margin-left: -100; }
+} */
+
+/*** Primary Text Start ***/
+.primary-section {
+    margin-top: -2.1rem;
+    margin-bottom: -2.2rem;
+    background-color: var(--secondGrey);
+}
+
+.primary-text {
+    color: var(--mainBlue);
+    font-weight: normal;
+    font-size: 2.6rem;
+    line-height: 32px;
+    text-align: center;
+    padding: 12rem 0;
+}
+/*** Primary Text End ***/
+
+/*** Services Start ***/
+.services {
+    background-color: var(--secondGrey);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    background-color: var(--secondGrey);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12rem 8rem 17rem; /* Poner en mq */
+}
+
+.svg1 {
+    width: 8rem;
+    margin-left: 35%;
+}
+
+.svg1__text {
+    font-size: 2rem;
+    color: var(--mainBlue);
+    text-align: center;
+}
+
+.svg2 {
+    width: 8rem;
+    margin-left: 35%;
+}
+
+.svg2__text {
+    font-size: 2rem;
+    color: var(--mainBlue);
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.svg3 {
+    width: 8rem;
+    margin-left: 35%;
+}
+
+.svg3__text {
+    font-size: 2rem;
+    color: var(--mainBlue);
+    text-align: center;
+    padding: 0 4rem;
+}
+
+.div-svg4 {
+    margin-left: -1rem;
+}
+
+.svg4 {
+    width: 8rem;
+    margin-left: 35%;
+}
+
+.svg4__text {
+    font-size: 2rem;
+    color: var(--mainBlue);
+    text-align: center;
+    padding: 0 3.2rem;
+}
+
+.flecha {
+    margin-left: 45%;
+
+}
+/*** Services End ***/
+
+/*** IFA Section Start ***/
+.ifaSection {
+    display: flex;
+}
+
+.ifaSection__textDiv {
+    padding: 8rem 0rem 8rem 8rem;
+}
+
+.ifaSection__title {
+    font-size: 3.5rem;
+    color: var(--mainBlue);
+    text-align: center;
+}
+
+.ifaSection__subtitle {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.ifaSection__text {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.ifaSection__button {
+    margin-top: 8%;
+    margin-left: 19%;
+    padding: 1.5rem 6rem;
+    background-color: var(--mainBlue);
+    color: var(--secondGrey);
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.ifaSection__img {
+    height: 100%;
+}
+/*** IFA Section Start ***/
+
+/*** CEDEARs Section Start ***/
+.cedears {
+    display: flex;
+    margin-top: -4%;
+}
+
+.cedears__img {
+    width: 49%;
+}
+
+.cedears__textDiv {
+    padding: 5rem 0rem 8rem 10rem;
+}
+
+.cedears__title {
+    font-size: 3.3rem;
+    text-align: center;
+}
+
+.cedears__text {
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+.cedears__button {
+    margin-top: 10%;
+    margin-left: 19%;
+    padding: 1.5rem 10rem;
+    background-color: var(--mainBlue);
+    color: var(--secondGrey);
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+/*** CEDEARs Section End ***/
+
+/*** App Section Start ***/
+.app {
+    display: flex;
+    background-color: var(--secondBlue);
+    height: 33rem;
+    margin-top: 7rem;
+}
+
+.app__textDiv {
+    padding-top: 3rem;
+    padding-left: 15rem;
+    margin-right: 45rem;
+}
+
+.app__title {
+    font-size: 3.3rem;
+    color: #FFF;
+    text-align: center;
+}
+
+.app__text {
+    color: #FFF;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.app__img {
+    width: 100%;
+    max-width: 350px;
+    margin-top: -29.48rem;
+    margin-left: 75rem;
+}
+
+.app__androIpho {
+    margin-left: 23%;
+}
+
+.app__android {
+    width: 20%;
+    margin-right: 2rem;
+}
+
+.app__iphone {
+    width: 17.55%;
+}
+/*** App Section End ***/
+
+/*** Disclaimer Start ***/
+.disclaimer {
+    width: 100%;
+    height: 3rem;
+}
+
+.disclaimer__text {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.disclaimer__span {
+    font-weight: bold;
+}
+
+.disclaimer__link {
+    color: var(--mainBlue);
+    text-decoration: none;
+}
+/*** Disclaimer End ***/
